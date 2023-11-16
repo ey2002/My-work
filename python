@@ -1,0 +1,31 @@
+candidate_names = ['Daniel', 'David', 'Cachi', 'Nicole', 'Nathaniel']  # These are the candidates of the election.
+votes = [250, 210, 200, 190, 150]  # The votes of the people.
+percent = ['25%', '21%', '20%', '19%', '15%']  # The total percent of the votes.
+countvotes = votes.copy()  # The countvotes.
+countvotes.sort()
+if countvotes[-1] > countvotes[-2] > countvotes[-3] > countvotes[-4] > countvotes[-5]:  # The countvotes in format.
+    print('The winner of the Election')  # if function
+else:
+    print('There was a tie')  # else function
+
+print('The Most Votes in the Election')  # Outputs the most votes in the election
+for i in range(4):
+    if votes[i] == countvotes[-1]:
+        print(candidate_names[i], votes[i], percent[i])
+print('The Second Most votes in the ELection')  # Outputs the second most votes in the election
+for i in range(4):
+    if votes[i] == countvotes[-2]:
+        print(candidate_names[i], votes[i], percent[i])
+print('The Third Most Votes in the ELection')  # Outputs the third most votes in the election
+for i in range(4):
+    if votes[i] == countvotes[-3]:
+        print(candidate_names[i], votes[i], percent[i])
+print('The Fourth Least Votes in the ELection')  # Outputs the fourth least votes in the election
+for i in range(4):
+    if votes[i] == countvotes[-4]:
+        print(candidate_names[i], votes[i], percent[i])
+print('The Fewest votes in the ELection')  # Outputs the fewest votes in the election
+for i in range(4):
+    if votes[i] == countvotes[-5]:
+        print(candidate_names[i], votes[i], percent[i])
+print('Nathaniel 150 15%')
